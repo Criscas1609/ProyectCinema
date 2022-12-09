@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="849.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.proyectofinalcorte3.controller.TicketViewController">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="850.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="341.0" layoutY="11.0" prefHeight="42.0" prefWidth="168.0" style="-fx-font-style: none;" styleClass="Titulos" stylesheets="@Styles.css" text="Boletas" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="A2" layoutX="373.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="A3" layoutX="456.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="A4" layoutX="525.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="A5" layoutX="609.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="B2" layoutX="373.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="B3" layoutX="456.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="B4" layoutX="525.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="B5" layoutX="609.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="C2" layoutX="373.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="C3" layoutX="456.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="C4" layoutX="525.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="C5" layoutX="609.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="D2" layoutX="373.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="D3" layoutX="456.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="D4" layoutX="525.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="D5" layoutX="609.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="A6" layoutX="670.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="B6" layoutX="670.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="C6" layoutX="670.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="D6" layoutX="670.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="B1" layoutX="308.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="C1" layoutX="308.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="D1" layoutX="308.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <AnchorPane layoutX="307.0" layoutY="118.0" prefHeight="54.0" prefWidth="406.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="108.0" layoutY="7.0" prefHeight="21.0" prefWidth="190.0" style="-fx-font-style: none;" stylesheets="@Styles.css" text="Pantalla" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="63.0" prefHeight="538.0" prefWidth="168.0" style="-fx-background-color: #040080;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="36.0" prefHeight="42.0" prefWidth="141.0" style="-fx-font-style: none;" styleClass="Titulos" stylesheets="@Styles.css" text="Pelicula" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameMovie" layoutX="37.0" layoutY="78.0" prefHeight="64.0" prefWidth="87.0" text="&quot;Nombre de la pelicula&quot;" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label fx:id="timeOfMovie" layoutX="29.0" layoutY="140.0" prefHeight="36.0" prefWidth="98.0" text="Duración: " textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label fx:id="showTime" layoutX="28.0" layoutY="185.0" prefHeight="36.0" prefWidth="98.0" text="Hora de la función:" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Button layoutX="45.0" layoutY="448.0" mnemonicParsing="false" onAction="#movieView" prefHeight="64.0" prefWidth="78.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/7492386.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TableView fx:id="tblView" layoutX="15.0" layoutY="269.0" prefHeight="140.0" prefWidth="142.0">
+               <columns>
+                  <TableColumn fx:id="colChair" prefWidth="56.79998588562012" text="Asientos" />
+                  <TableColumn fx:id="colPrice" prefWidth="84.80000152587891" text="Precio" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="704.0" layoutY="486.0" mnemonicParsing="false" onAction="#sellView" prefHeight="113.0" prefWidth="130.0" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/black-rightwards-arrow_27a1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="A1" layoutX="308.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

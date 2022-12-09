@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="849.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.proyectofinalcorte3.controller.InvoiceViewController">
+   <children>
+      <AnchorPane layoutY="63.0" prefHeight="538.0" prefWidth="69.0" style="-fx-background-color: #040080;" />
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="64.0" prefWidth="850.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="232.0" layoutY="10.0" prefHeight="42.0" prefWidth="385.0" style="-fx-font-style: none;" styleClass="Titulos" stylesheets="@Styles.css" text="Factura" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="TOP_CENTER" layoutX="-156.0" layoutY="306.0" prefHeight="42.0" prefWidth="385.0" rotate="-90.0" style="-fx-font-style: none;" styleClass="Titulos" stylesheets="@Styles.css" text="Resumen de la compra" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="invoice" alignment="TOP_CENTER" layoutX="125.0" layoutY="167.0" prefHeight="330.0" prefWidth="421.0" text="&quot;INFORMACIÓN DE LA VENTA DE ENTRADAS DE CINE&quot;" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="client" alignment="TOP_CENTER" layoutX="586.0" layoutY="220.0" prefHeight="106.0" prefWidth="224.0" text="&quot;INFORMACION DE MIEMBRO DEL CINE&quot;" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="727.0" layoutY="497.0" mnemonicParsing="false" onAction="#loginView" prefHeight="58.0" prefWidth="82.0" styleClass="botonVistas">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/Exit-PNG-Transparent-Image.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

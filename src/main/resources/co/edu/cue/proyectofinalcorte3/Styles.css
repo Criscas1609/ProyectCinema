@@ -1,0 +1,31 @@
+.Titulos{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: italic;
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+}
+.textosNormales{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: italic;
+}
+.botonLogin{
+    -fx-background-color: #0d4aff;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Times New Roman";
+    -fx-font-style: italic;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+.botonVistas{
+
+    -fx-border-color: none;
+    -fx-background-color: none;
+    -fx-text-fill: white;
+
+}
+.sillas{
+    -fx-background-color: none;
+    -fx-border-color: green;
+}

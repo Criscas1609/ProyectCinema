@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="849.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.proyectofinalcorte3.controller.MainViewController">
+   <top>
+      <AnchorPane prefHeight="87.0" prefWidth="838.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="261.0" layoutY="22.0" prefHeight="42.0" prefWidth="327.0" style="-fx-font-style: none;" styleClass="Titulos" stylesheets="@Styles.css" text="Menú principal" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="513.0" prefWidth="166.0" style="-fx-background-color: #040080;" BorderPane.alignment="CENTER">
+         <effect>
+            <SepiaTone level="0.0" />
+         </effect>
+         <children>
+            <Button mnemonicParsing="false" onAction="#mainView" prefHeight="58.0" prefWidth="168.0" styleClass="botonVistas" text="Inicio">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/popcorn-snack.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="58.0" mnemonicParsing="false" onAction="#clientView" prefHeight="58.0" prefWidth="168.0" styleClass="botonVistas" text="Membresia">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/offerte-toste-offerte.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="116.0" mnemonicParsing="false" onAction="#shopView" prefHeight="58.0" prefWidth="168.0" styleClass="botonVistas" text="Boleteria">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/kstr-kochstrasse.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="454.0" mnemonicParsing="false" onAction="#userView" prefHeight="58.0" prefWidth="86.0" styleClass="botonVistas">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/59170.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="86.0" layoutY="454.0" mnemonicParsing="false" onAction="#loginView" prefHeight="58.0" prefWidth="82.0" styleClass="botonVistas">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/Exit-PNG-Transparent-Image.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="122.0" fitWidth="146.0" layoutX="25.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/watching-a-movie-mini-pufts.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="109.0" layoutX="31.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/alex-and-cosmo-cute.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <stylesheets>
+      <URL value="@Styles.css" />
+   </stylesheets>
+   <center>
+      <AnchorPane prefHeight="537.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="540.0" fitWidth="691.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/Diseño%20sin%20título.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
