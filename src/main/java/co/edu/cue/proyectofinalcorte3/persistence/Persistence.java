@@ -22,8 +22,8 @@ public class Persistence {
         String contenido = "";
 
         for(Client clients: listClient) {
-            contenido+= clients.getName()+"@"+clients.getId()+"@"+clients.getPhoneNumber()+"@"+
-                    clients.getBirthday()+"@"+clients.getLastName()+"@"+clients.getAddress()+"\n";
+            contenido+= clients.getName()+"//"+clients.getId()+"//"+clients.getPhoneNumber()+"//"+
+                    clients.getBirthday()+"//"+clients.getLastName()+"//"+clients.getAddress()+"\n";
         }
 
         UsefulFile.saveFile(RUTA_ARCHIVO_CLIENT, contenido, false);
@@ -39,12 +39,12 @@ public class Persistence {
             for (String lista : contenido) {
                 Client client = new Client();
                 linea = lista;
-                client.setName(linea.split("@")[0]);
-                client.setId(linea.split("@")[1]);
-                client.setPhoneNumber(linea.split("@")[2]);
-                client.setBirthday(linea.split("@")[3]);
-                client.setLastName(linea.split("@")[4]);
-                client.setAddress(linea.split("@")[5]);
+                client.setName(linea.split("//")[0]);
+                client.setId(linea.split("//")[1]);
+                client.setPhoneNumber(linea.split("//")[2]);
+                client.setBirthday(linea.split("//")[3]);
+                client.setLastName(linea.split("//")[4]);
+                client.setAddress(linea.split("//")[5]);
                 clients.add(client);
             }
         }

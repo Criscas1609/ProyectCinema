@@ -27,6 +27,7 @@ public class ClientServiceImpl implements ClientService {
 
     Client clientAux;
 
+    //Función que crea un nuevo cliente y lo añade a la lista y actualiza para que se muestre en la tabla
     public void addClient(String name, String id, String lastName, String birthday, String phoneNumber, String address, ObservableList<Client> clientsView, TableView<Client> tblClient) {
         clientAux = new Client(name, id, lastName, birthday, phoneNumber, address);
         listClients.add(clientAux);
@@ -34,10 +35,18 @@ public class ClientServiceImpl implements ClientService {
         tblClient.setItems(clientsView);
         tblClient.refresh();
     }
+
+    //Esta función permite acceder a los datos de la tabla y los pone en los inputs
     public void selectClient(TextField nameClient, TextField lastName, TextField idClient, TextField phoneCliente, TextField emailCliente, DatePicker birthday,ObservableList<Client> clientsView, TableView<Client> tblClient){
-    clientAux = tblClient.getSelectionModel().getSelectedItem();
-    fillInput(nameClient, lastName, idClient, phoneCliente, emailCliente, birthday);
+        try {
+        clientAux = tblClient.getSelectionModel().getSelectedItem();
+        fillInput(nameClient, lastName, idClient, phoneCliente, emailCliente, birthday);
+        }catch (Exception e){
+            AllExeption.errorAlert();
+        }
     }
+
+    //Funciones auxiliares
     public void fillInput(TextField nameClient, TextField lastName, TextField idClient, TextField phoneCliente, TextField emailCliente, DatePicker birthday){
         nameClient.setText(clientAux.getName());
         lastName.setText(clientAux.getLastName());
@@ -55,6 +64,8 @@ public class ClientServiceImpl implements ClientService {
             tblClient.refresh();
         }
     }
+
+    //Esta función permite eliminar al cliente y actualizar la tabla
     public void deleteClient(ObservableList<Client> clientsView, TableView<Client> tblClient){
         if (clientAux == null){
             AllExeption.selectClientAlert();
@@ -65,12 +76,13 @@ public class ClientServiceImpl implements ClientService {
         }
     }
     public void editClient(ObservableList<Client> clientsView, TableView<Client> tblClient,Client aux){
-        if (clientAux == null){
-            System.out.println("Debe de tener un cliente seleccionado");
-        }else {
-            editList(aux);
-            showTbl(clientsView,tblClient);
-        }
+            if (clientAux == null){
+                AllExeption.selectClientAlert();
+            }else {
+                editList(aux);
+                showTbl(clientsView,tblClient);
+            }
+
     }
     public void search(TableView<Client> tblClient, String search){
         for (Client client : listClients){

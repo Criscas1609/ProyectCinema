@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="849.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.proyectofinalcorte3.controller.UserViewController">
+   <top>
+      <AnchorPane prefHeight="87.0" prefWidth="838.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="261.0" layoutY="22.0" prefHeight="42.0" prefWidth="327.0" style="-fx-font-style: none;" styleClass="Titulos" stylesheets="@Styles.css" text="Informes" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="513.0" prefWidth="166.0" style="-fx-background-color: #040080;" BorderPane.alignment="CENTER">
+         <effect>
+            <SepiaTone level="0.0" />
+         </effect>
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" onAction="#mainView" prefHeight="67.0" prefWidth="166.0" styleClass="botonVistas" text="Inicio">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="68.0" mnemonicParsing="false" onAction="#clientView" prefHeight="67.0" prefWidth="166.0" styleClass="botonVistas" text="Membresia">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="135.0" mnemonicParsing="false" onAction="#moviesView" prefHeight="67.0" prefWidth="166.0" styleClass="botonVistas" text="Boleteria">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="454.0" mnemonicParsing="false" onAction="#userView" prefHeight="58.0" prefWidth="80.0" styleClass="botonVistas">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/59170.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="83.0" layoutY="454.0" mnemonicParsing="false" onAction="#loginView" prefHeight="58.0" prefWidth="82.0" styleClass="botonVistas">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/Exit-PNG-Transparent-Image.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="196.0" fitWidth="156.0" layoutX="5.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Photos/cine4life (2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <stylesheets>
+      <URL value="@Styles.css" />
+   </stylesheets>
+   <center>
+      <AnchorPane prefHeight="159.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="2.0" prefHeight="516.0" prefWidth="686.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="58.0" layoutY="138.0" prefHeight="71.0" prefWidth="192.0" text="Sillas vendidas por pelicula" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="238.0" prefHeight="20.0" prefWidth="122.0" text="Wakanda por Siempre" />
+                  <Label layoutX="67.0" layoutY="274.0" prefHeight="20.0" prefWidth="122.0" text="Strange world" />
+                  <Label layoutX="67.0" layoutY="347.0" prefHeight="20.0" prefWidth="122.0" text="Avatar 2" />
+                  <Label layoutX="67.0" layoutY="311.0" prefHeight="20.0" prefWidth="122.0" text="Black Adam" />
+                  <Label fx:id="movie1" alignment="CENTER" layoutX="214.0" layoutY="240.0" prefHeight="16.0" prefWidth="24.0" style="-fx-border-color: black;" />
+                  <Label fx:id="movie2" alignment="CENTER" layoutX="214.0" layoutY="274.0" prefHeight="16.0" prefWidth="24.0" style="-fx-border-color: black;" />
+                  <Label fx:id="movie3" alignment="CENTER" layoutX="214.0" layoutY="311.0" prefHeight="16.0" prefWidth="24.0" style="-fx-border-color: black;" />
+                  <Label fx:id="movie4" alignment="CENTER" layoutX="214.0" layoutY="347.0" prefHeight="16.0" prefWidth="24.0" style="-fx-border-color: black;" />
+                  <Label layoutX="363.0" layoutY="238.0" prefHeight="20.0" prefWidth="122.0" text="Numero de ventas" />
+                  <Label layoutX="363.0" layoutY="274.0" prefHeight="20.0" prefWidth="122.0" text="Numero de clientes" />
+                  <Label fx:id="totalDetail" alignment="CENTER" layoutX="526.0" layoutY="240.0" prefHeight="16.0" prefWidth="24.0" style="-fx-border-color: black;" />
+                  <Label fx:id="totalClient" alignment="CENTER" layoutX="526.0" layoutY="274.0" prefHeight="16.0" prefWidth="24.0" style="-fx-border-color: black;" />
+                  <Label alignment="CENTER" layoutX="363.0" layoutY="138.0" prefHeight="71.0" prefWidth="192.0" text="Información Adicional" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
