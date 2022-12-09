@@ -1,33 +1,30 @@
 package co.edu.cue.proyectofinalcorte3.service.impl;
 
-import co.edu.cue.proyectofinalcorte3.model.Client;
-import co.edu.cue.proyectofinalcorte3.model.Food;
-import co.edu.cue.proyectofinalcorte3.model.Ticket;
+import co.edu.cue.proyectofinalcorte3.model.*;
+import co.edu.cue.proyectofinalcorte3.persistence.Persistence;
 import co.edu.cue.proyectofinalcorte3.service.SellService;
-import co.edu.cue.proyectofinalcorte3.service.TicketService;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.css.Stylesheet;
-import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.Border;
-import javafx.scene.paint.Color;
-
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
 public class SellServiceImpl implements SellService {
 
+    private static final ArrayList<Food> foodList = new ArrayList<Food>();
+    private static ArrayList<Detail> detailList = new ArrayList<Detail>();
 
-    private final ArrayList<Food> foodList = new ArrayList<Food>();
+    public static ArrayList<Detail> getDetailList() {
+        return detailList;
+    }
+
     ArrayList<Ticket> clientSeat;
-    List<Client> clientList;
+    ArrayList<Client> clientList;
+    Person clientDetail;
+    Food foodAux;
 
 
-
-    //Funciones de la vista ticket
 
     public void showTbl(TableView<Ticket> ticketList,ArrayList<Ticket> movie,ObservableList<Ticket> ticketsView){
         ticketsView.clear();
@@ -45,7 +42,7 @@ public class SellServiceImpl implements SellService {
         showTbl(ticketList,clientSeat,ticketsView);
     }
     public void foodTbl(String movie,TableView<Food> foodTbl,String food,double price,ObservableList<Food> foodView) {
-        Food foodAux = new Food(food, price);
+        foodAux = new Food(food, price);
         foodList.add(foodAux);
         foodView.add(foodAux);
         foodTbl.setItems(foodView);
@@ -53,11 +50,28 @@ public class SellServiceImpl implements SellService {
 
     }
 
-    public void getData(){
-        clientSeat = TicketServiceImpl.getClientSeat();
-        //clientList = ClientServiceImpl.getListClients();
+    public void validateClient(String member, String id,String name){
+        if(Objects.equals(member, "")){
+            clientDetail = new Person(name,id);
+        }else{
+            for(Client client: clientList){
+                if (client.getId().equals(member)){
+                    clientDetail = new Person(client.getName(), client.getId());
+                }
+            }
+        }
     }
 
+
+    public void createDetal(String movie){
+        Detail detail = new Detail(clientSeat,foodList,clientDetail,movie);
+        detailList.add(detail);
+    }
+
+    public void getData(){
+        clientSeat = TicketServiceImpl.getClientSeat();
+        clientList = ClientServiceImpl.getListClients();
+    }
 
 
 
@@ -65,5 +79,11 @@ public class SellServiceImpl implements SellService {
     public void deleteTbl(){
         foodList.clear();
     }
+
+    public void showTotal(Label totalDetail){
+        totalDetail.setText(String.valueOf(detailList.size()));
+    }
+
+
 
 }

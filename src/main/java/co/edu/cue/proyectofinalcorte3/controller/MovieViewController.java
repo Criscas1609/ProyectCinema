@@ -1,17 +1,10 @@
 package co.edu.cue.proyectofinalcorte3.controller;
 
 import co.edu.cue.proyectofinalcorte3.HelloApplication;
-import co.edu.cue.proyectofinalcorte3.controller.TicketViewController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Objects;
 
 public class MovieViewController {
 
@@ -92,8 +85,8 @@ public class MovieViewController {
     }
 
     @FXML
-    void userView(ActionEvent event) {
-
+    void userView(ActionEvent event) throws IOException {
+        HelloApplication.usersView(event);
     }
 
 }

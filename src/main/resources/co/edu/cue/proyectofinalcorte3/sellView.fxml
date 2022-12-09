@@ -6,6 +6,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,21 +21,25 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="35.0" layoutY="352.0" prefHeight="36.0" prefWidth="98.0" text="Armenia Quindío" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
-            <Label layoutX="20.0" layoutY="289.0" prefHeight="54.0" prefWidth="126.0" text="Informacíon Adicional" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-               <font>
-                  <Font name="Times New Roman Bold" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="48.0" layoutY="388.0" prefHeight="36.0" prefWidth="68.0" text="3107211569" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
-            <Label layoutX="35.0" layoutY="432.0" prefHeight="36.0" prefWidth="98.0" text="Carrera 14 No 50N" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
             <Label fx:id="nameMovie" layoutX="43.0" layoutY="81.0" prefHeight="64.0" prefWidth="87.0" text="&quot;Nombre de la pelicula&quot;" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
             <Label fx:id="timeOfMovie" layoutX="35.0" layoutY="143.0" prefHeight="36.0" prefWidth="98.0" text="Duración: " textAlignment="CENTER" textFill="WHITE" wrapText="true" />
             <Label fx:id="showTime" layoutX="34.0" layoutY="188.0" prefHeight="36.0" prefWidth="98.0" text="Hora de la función:" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Button layoutX="44.0" layoutY="444.0" mnemonicParsing="false" onAction="#ticketView" prefHeight="42.0" prefWidth="78.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photos/7492386.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children></AnchorPane>
-      <Button layoutX="607.0" layoutY="405.0" mnemonicParsing="false" onAction="#movieView" prefHeight="131.0" prefWidth="192.0" style="-fx-background-color: none;">
+      <Button layoutX="624.0" layoutY="404.0" mnemonicParsing="false" onAction="#movieView" prefHeight="135.0" prefWidth="150.0" style="-fx-background-color: none;">
          <graphic>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="147.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Photos/404644.png" />
                </image>
@@ -58,18 +63,18 @@
       <Label layoutX="264.0" layoutY="481.0" text="Nombre" />
       <TextField id="nombreProfesor" fx:id="nameClient" layoutX="329.0" layoutY="476.0" prefHeight="26.0" prefWidth="171.0" promptText="Ingrese el primer nombre" />
       <Label layoutX="286.0" layoutY="526.0" prefHeight="18.0" prefWidth="22.0" text="ID" textAlignment="CENTER" wrapText="true" />
-      <TextField id="nombreProfesor" fx:id="idClient" layoutX="329.0" layoutY="522.0" prefHeight="26.0" prefWidth="171.0" promptText="Ingrese el ID" />
+      <TextField id="nombreProfesor" fx:id="idClient" layoutX="329.0" layoutY="522.0" onKeyTyped="#onlyNumber" prefHeight="26.0" prefWidth="171.0" promptText="Ingrese el ID" />
       <TableView fx:id="foodTblView" layoutX="415.0" layoutY="132.0" prefHeight="200.0" prefWidth="149.0">
          <columns>
             <TableColumn fx:id="colFood" prefWidth="75.0" text="Comida" />
             <TableColumn fx:id="colFoodPrice" prefWidth="75.0" text="Precio" />
          </columns>
       </TableView>
-      <Button layoutX="640.0" layoutY="156.0" mnemonicParsing="false" onAction="#popCorn" prefHeight="64.0" prefWidth="125.0" style="-fx-background-color: none; -fx-border-color: blue;" text="Crispetas">
+      <Button layoutX="638.0" layoutY="143.0" mnemonicParsing="false" onAction="#popCorn" prefHeight="54.0" prefWidth="126.0" style="-fx-background-color: #000EB5;" text="Crispetas" textFill="WHITE">
          <graphic>
-            <ImageView fitHeight="46.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="39.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Photos/Crispeta Grande.jpg" />
+                  <Image url="@Photos/7b299823210fb7600aa1586846de1460.png" />
                </image>
             </ImageView>
          </graphic>
@@ -77,9 +82,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="640.0" layoutY="245.0" mnemonicParsing="false" onAction="#drink" prefHeight="64.0" prefWidth="126.0" style="-fx-background-color: none; -fx-border-color: blue;" text="Gaseosa">
+      <Button layoutX="637.0" layoutY="223.0" mnemonicParsing="false" onAction="#drink" prefHeight="42.0" prefWidth="126.0" style="-fx-background-color: #000EB5;" text="Gaseosa" textFill="WHITE">
          <graphic>
-            <ImageView fitHeight="47.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="45.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Photos/Softdrink.svg.png" />
                </image>
@@ -92,6 +97,11 @@
       <Label layoutX="291.0" layoutY="409.0" text="ID" />
       <Label layoutX="361.0" layoutY="443.0" text="Si no esta registrado" />
       <Label layoutX="366.0" layoutY="375.0" text="Usuario registrado" />
-      <TextField fx:id="idMember" layoutX="329.0" layoutY="404.0" prefHeight="26.0" prefWidth="171.0" promptText="ID usuario registrado" />
+      <TextField fx:id="idMember" layoutX="329.0" layoutY="404.0" onKeyTyped="#onlyNumber" prefHeight="26.0" prefWidth="171.0" promptText="ID usuario registrado" />
+      <Button layoutX="638.0" layoutY="306.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #000EB5;" text="Borrar seleccion" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

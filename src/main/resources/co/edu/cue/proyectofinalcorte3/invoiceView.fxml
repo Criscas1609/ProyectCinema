@@ -26,8 +26,11 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <Label fx:id="invoice" alignment="TOP_CENTER" layoutX="125.0" layoutY="167.0" prefHeight="330.0" prefWidth="421.0" text="&quot;INFORMACIÓN DE LA VENTA DE ENTRADAS DE CINE&quot;" textAlignment="CENTER" wrapText="true" />
-      <Label fx:id="client" alignment="TOP_CENTER" layoutX="586.0" layoutY="220.0" prefHeight="106.0" prefWidth="224.0" text="&quot;INFORMACION DE MIEMBRO DEL CINE&quot;" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="invoice" alignment="CENTER" layoutX="125.0" layoutY="167.0" prefHeight="330.0" prefWidth="421.0" text="&quot;INFORMACIÓN DE LA VENTA DE ENTRADAS DE CINE&quot;" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="client" alignment="TOP_CENTER" layoutX="586.0" layoutY="220.0" prefHeight="106.0" prefWidth="224.0" text="&quot;INFORMACION DE MIEMBRO DEL CINE&quot;" wrapText="true" />
       <Button layoutX="727.0" layoutY="497.0" mnemonicParsing="false" onAction="#loginView" prefHeight="58.0" prefWidth="82.0" styleClass="botonVistas">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />

@@ -3,13 +3,18 @@ package co.edu.cue.proyectofinalcorte3.controller;
 import co.edu.cue.proyectofinalcorte3.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class MainViewController {
+import static co.edu.cue.proyectofinalcorte3.HelloApplication.usersView;
+
+public class MainViewController{
 
     @FXML
-    void clientView(ActionEvent event) throws IOException {
+    void memberView(ActionEvent event) throws IOException {
         HelloApplication.clientsViews(event);
 
     }
@@ -32,8 +37,8 @@ public class MainViewController {
     }
 
     @FXML
-    void userView(ActionEvent event) {
-
+    void userView(ActionEvent event) throws IOException {
+        usersView(event);
     }
 
 }

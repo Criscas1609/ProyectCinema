@@ -9,6 +9,10 @@ public class Ticket {
         this.price = price;
     }
 
+    public Ticket() {
+        super();
+    }
+
     public String getChair() {
         return chair;
     }

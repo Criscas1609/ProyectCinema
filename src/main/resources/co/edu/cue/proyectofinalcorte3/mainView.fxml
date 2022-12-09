@@ -42,7 +42,7 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
-            <Button layoutY="58.0" mnemonicParsing="false" onAction="#clientView" prefHeight="58.0" prefWidth="168.0" styleClass="botonVistas" text="Membresia">
+            <Button layoutY="58.0" mnemonicParsing="false" onAction="#memberView" prefHeight="58.0" prefWidth="168.0" styleClass="botonVistas" text="Membresia">
                <graphic>
                   <ImageView fitHeight="34.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                      <image>

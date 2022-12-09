@@ -1,27 +1,21 @@
 package co.edu.cue.proyectofinalcorte3.controller;
 
 import co.edu.cue.proyectofinalcorte3.HelloApplication;
-import co.edu.cue.proyectofinalcorte3.model.Food;
 import co.edu.cue.proyectofinalcorte3.model.Ticket;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.Region;
-import javafx.scene.paint.Color;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class TicketViewController implements Initializable {
@@ -139,7 +133,7 @@ public class TicketViewController implements Initializable {
 
 
     @FXML
-    void chair(ActionEvent event) {
+    void chair(ActionEvent event) throws IOException {
 
         String chair = event.getSource().toString();
         String[] sillas = chair.split("'");
@@ -149,7 +143,12 @@ public class TicketViewController implements Initializable {
 
 
     }
-
+    @FXML
+    void deleteAll(ActionEvent event) throws IOException {
+        mfc.deleteAll(nameMovie.getText(),chairs);
+        ticketsView.clear();
+        loadChair();
+    }
     @FXML
     void movieView(ActionEvent event) throws IOException {
         mfc.deleteAll(nameMovie.getText(),chairs);
@@ -171,6 +170,7 @@ public class TicketViewController implements Initializable {
         addChairsColumn3();
         addChairsColumn4();
         loadChair();
+
 
 
 

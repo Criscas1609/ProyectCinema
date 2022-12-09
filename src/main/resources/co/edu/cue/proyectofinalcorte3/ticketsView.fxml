@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="849.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.proyectofinalcorte3.controller.TicketViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="849.0" style="-fx-background-color: #E1DFDF;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.proyectofinalcorte3.controller.TicketViewController">
    <children>
       <AnchorPane prefHeight="64.0" prefWidth="850.0" style="-fx-background-color: black;">
          <children>
@@ -22,96 +22,96 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button fx:id="A2" layoutX="373.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A2">
+      <Button fx:id="A2" layoutX="373.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="A2" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="A3" layoutX="456.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A3">
+      <Button fx:id="A3" layoutX="456.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="A3" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="A4" layoutX="525.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A4">
+      <Button fx:id="A4" layoutX="525.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="A4" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="A5" layoutX="609.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A5">
+      <Button fx:id="A5" layoutX="609.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="A5" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="B2" layoutX="373.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B2">
+      <Button fx:id="B2" layoutX="373.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="B2" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="B3" layoutX="456.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B3">
+      <Button fx:id="B3" layoutX="456.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="B3" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="B4" layoutX="525.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B4">
+      <Button fx:id="B4" layoutX="525.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="B4" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="B5" layoutX="609.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B5">
+      <Button fx:id="B5" layoutX="609.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="B5" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="C2" layoutX="373.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C2">
+      <Button fx:id="C2" layoutX="373.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="C2" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="C3" layoutX="456.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C3">
+      <Button fx:id="C3" layoutX="456.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="C3" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="C4" layoutX="525.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C4">
+      <Button fx:id="C4" layoutX="525.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="C4" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="C5" layoutX="609.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C5">
+      <Button fx:id="C5" layoutX="609.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="C5" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="D2" layoutX="373.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D2">
+      <Button fx:id="D2" layoutX="373.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="D2" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="D3" layoutX="456.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D3">
+      <Button fx:id="D3" layoutX="456.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="D3" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="D4" layoutX="525.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D4">
+      <Button fx:id="D4" layoutX="525.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="D4" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="D5" layoutX="609.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D5">
+      <Button fx:id="D5" layoutX="609.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="D5" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="A6" layoutX="670.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A6">
+      <Button fx:id="A6" layoutX="670.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="A6" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="B6" layoutX="670.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B6">
+      <Button fx:id="B6" layoutX="670.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="B6" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="C6" layoutX="670.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C6">
+      <Button fx:id="C6" layoutX="670.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="C6" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="D6" layoutX="670.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D6">
+      <Button fx:id="D6" layoutX="670.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="D6" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="B1" layoutX="308.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="B1">
+      <Button fx:id="B1" layoutX="308.0" layoutY="275.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="B1" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="C1" layoutX="308.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="C1">
+      <Button fx:id="C1" layoutX="308.0" layoutY="347.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="C1" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="D1" layoutX="308.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="D1">
+      <Button fx:id="D1" layoutX="308.0" layoutY="418.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="D1" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -146,12 +146,13 @@
                   </ImageView>
                </graphic>
             </Button>
-            <TableView fx:id="tblView" layoutX="15.0" layoutY="269.0" prefHeight="140.0" prefWidth="142.0">
+            <TableView fx:id="tblView" layoutX="15.0" layoutY="259.0" prefHeight="121.0" prefWidth="142.0">
                <columns>
-                  <TableColumn fx:id="colChair" prefWidth="56.79998588562012" text="Asientos" />
-                  <TableColumn fx:id="colPrice" prefWidth="84.80000152587891" text="Precio" />
+                  <TableColumn fx:id="colChair" prefWidth="70.39999198913574" text="Asientos" />
+                  <TableColumn fx:id="colPrice" prefWidth="72.00000762939453" text="Precio" />
                </columns>
             </TableView>
+            <Button layoutX="32.0" layoutY="397.0" mnemonicParsing="false" onAction="#deleteAll" style="-fx-background-color: white;" text="Borrar seleccion" />
          </children>
       </AnchorPane>
       <Button layoutX="704.0" layoutY="486.0" mnemonicParsing="false" onAction="#sellView" prefHeight="113.0" prefWidth="130.0" style="-fx-background-color: none;">
@@ -163,7 +164,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="A1" layoutX="308.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" styleClass="sillas" text="A1">
+      <Button fx:id="A1" layoutX="308.0" layoutY="201.0" mnemonicParsing="false" onAction="#chair" prefHeight="54.0" prefWidth="42.0" style="-fx-background-color: green;" styleClass="sillas" text="A1" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

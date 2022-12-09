@@ -138,9 +138,9 @@
                               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
                                  <children>
                                     <Label alignment="CENTER" prefHeight="18.0" prefWidth="62.0" text="ID" textAlignment="CENTER" wrapText="true" />
-                                    <TextField id="nombreProfesor" fx:id="idClient" prefHeight="26.0" prefWidth="183.0" promptText="Ingrese el ID" />
+                                    <TextField id="nombreProfesor" fx:id="idClient" onKeyTyped="#onlyNumbers" prefHeight="26.0" prefWidth="183.0" promptText="Ingrese el ID" />
                                     <Label text="Teléfono" />
-                                    <TextField id="nombreProfesor" fx:id="phoneClient" prefHeight="26.0" prefWidth="189.0" promptText="Ingrese el numero de celular" />
+                                    <TextField id="nombreProfesor" fx:id="phoneClient" onKeyTyped="#onlyNumbers" prefHeight="26.0" prefWidth="189.0" promptText="Ingrese el numero de celular" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />

@@ -1,19 +1,17 @@
 package co.edu.cue.proyectofinalcorte3.controller;
 
 import co.edu.cue.proyectofinalcorte3.HelloApplication;
+import co.edu.cue.proyectofinalcorte3.exeptions.AllExeption;
 import co.edu.cue.proyectofinalcorte3.model.Client;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 import java.net.URL;
@@ -82,34 +80,44 @@ public class ClientsViewController implements Initializable {
 
     @FXML
     void ClientsView(ActionEvent event) throws IOException {
+        mfc.saveClients();
         HelloApplication.clientsViews(event);
 
     }
 
     @FXML
     void MoviesView(ActionEvent event) throws IOException {
+        mfc.saveClients();
         HelloApplication.moviesViews(event);
     }
 
     @FXML
     void loginView(ActionEvent event) throws IOException {
+        mfc.saveClients();
         HelloApplication.loginViews(event);
     }
 
     @FXML
     void mainView(ActionEvent event) throws IOException {
+        mfc.saveClients();
         HelloApplication.mainViews(event);
     }
 
     @FXML
-    void userView(ActionEvent event) {
-
+    void userView(ActionEvent event) throws IOException {
+        mfc.saveClients();
+        HelloApplication.usersView(event);
     }
 
     @FXML
     void create(ActionEvent event) {
         getData();
-        mfc.addClient(name,id,lastName,birthday,phone,email,clientsView,tblClient);
+        boolean a = AllExeption.fieldClient(name,id,lastName,birthday,phone,email);
+        boolean b = AllExeption.birthday(birthday);
+        if(a && b) {
+            mfc.addClient(name,id,lastName,birthday,phone,email,clientsView,tblClient);
+        }
+
     }
 
     @FXML
@@ -120,9 +128,27 @@ public class ClientsViewController implements Initializable {
     @FXML
     void edit(ActionEvent event) {
         getData();
-        Client aux = new Client(name,id,lastName,birthday,phone,email);
-        mfc.editClient(clientsView,tblClient,aux);
+        boolean a = AllExeption.fieldClient(name,id,lastName,birthday,phone,email);
+        boolean b = AllExeption.birthday(birthday);
+        if(a && b) {
+            Client aux = new Client(name, id, lastName, birthday, phone, email);
+            mfc.editClient(clientsView, tblClient, aux);
+        }
 
+    }
+    double x;
+    @FXML
+    void onlyNumbers(KeyEvent event) {
+        try {
+            x = Integer.parseInt(idClient.getText());
+        } catch (NumberFormatException nfe) {
+            idClient.setText("");
+        }
+        try {
+            x = Integer.parseInt(phoneClient.getText());
+        } catch (NumberFormatException nfe) {
+            phoneClient.setText("");
+        }
     }
 
 
@@ -160,5 +186,7 @@ public class ClientsViewController implements Initializable {
     void showTbl(){
         mfc.showTbl(clientsView,tblClient);
     }
+
+
 }
 

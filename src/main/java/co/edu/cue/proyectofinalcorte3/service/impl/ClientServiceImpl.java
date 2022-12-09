@@ -1,25 +1,27 @@
 package co.edu.cue.proyectofinalcorte3.service.impl;
 
+import co.edu.cue.proyectofinalcorte3.exeptions.AllExeption;
 import co.edu.cue.proyectofinalcorte3.model.Client;
 import co.edu.cue.proyectofinalcorte3.model.ClientDTO;
+import co.edu.cue.proyectofinalcorte3.persistence.Persistence;
 import co.edu.cue.proyectofinalcorte3.service.ClientService;
 import javafx.collections.ObservableList;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ClientServiceImpl implements ClientService {
-    public List<Client> listClients = new ArrayList<Client>();
+    private static ArrayList<Client> listClients = new ArrayList<Client>();
 
-    public List<Client> getListClients() {
+    public static ArrayList<Client> getListClients() {
         return listClients;
     }
 
@@ -55,7 +57,7 @@ public class ClientServiceImpl implements ClientService {
     }
     public void deleteClient(ObservableList<Client> clientsView, TableView<Client> tblClient){
         if (clientAux == null){
-            System.out.println("Debe de tener un cliente seleccionado");
+            AllExeption.selectClientAlert();
         }else{
             clientsView.remove(clientAux);
             listClients.remove(clientAux);
@@ -92,16 +94,23 @@ public class ClientServiceImpl implements ClientService {
         }
     }
 
+    //Persistencia
+    public void loadClients() {
+        try {
+            listClients = Persistence.loadClients();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void saveClients() {
+        try {
+            Persistence.saveClient(listClients);
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-
-    /*public void fillTable(Client aux) {
-        client.setName(aux.getName());
-        client.setLastName(aux.getLastName());
-        client.setId(aux.getId());
-        client.setPhoneNumber(aux.getPhoneNumber());
-        client.setAddress(aux.getAddress());
-        client.setBirthday(aux.getBirthday());
-    }*/
+    //
 
 
     public Stream<Client> search(String name){
@@ -115,6 +124,16 @@ public class ClientServiceImpl implements ClientService {
         return  listClients.stream()
                 .map(client-> new ClientDTO(client.getName(),client.getBirthday()))
                 .collect(Collectors.toList());
+    }
+
+    public void stringId(ArrayList<String> idlist){
+        for(Client client: listClients){
+            idlist.add(client.getId());
+        }
+    }
+
+    public void showClients(Label clientLabel){
+        clientLabel.setText(String.valueOf(listClients.size()));
     }
 
 

@@ -15,6 +15,10 @@ public class Client extends Person {
         this.address = address;
     }
 
+    public Client() {
+        super();
+    }
+
     public String getLastName() {
         return lastName;
     }
